@@ -1,0 +1,77 @@
+/* src/Calculator.css */
+.calculator {
+  width: 300px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #232323;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  position: relative;
+}
+
+.display {
+  background-color: #c9c9c9;
+  color: #000000;
+  padding: 45px;
+  text-align: right;
+  font-size: 24px;
+  border: none;
+  border-radius: 5px;
+}
+
+.keypad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.dark-mode-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.dark-mode-button button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: inline;
+}
+
+.dark-mode-button img {
+  width: 24px;
+}
+
+button {
+  background-color: transparent;
+  color: #fff;
+  font-size: 30px;
+  padding: 15px 30px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the Clear button and Backspace button */
+button:contains("C"),
+button:contains("\u232B") {
+  background-color: transparent;
+  color: #f44336;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: 
+  #a1a1a1;
+}
